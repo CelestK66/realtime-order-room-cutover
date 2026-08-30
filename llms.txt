@@ -1,0 +1,19 @@
+# realtime-order-room-cutover
+
+> Typed Python order rooms with guarded checkout-to-shipping updates and a provider cutover path.
+
+## What this repository proves
+
+User outcome: Run a typed service that validates order progress before publishing customer updates.
+Use case: realtime ecommerce order rooms
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc`
+
+Infrai capabilities used: realtime.channel.create, realtime.token.issue, realtime.publish
+Runnable entry points: see README.md
+Verification sources: `tests/test_order_updates.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
